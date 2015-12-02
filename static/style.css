@@ -1,0 +1,844 @@
+/*******************************
+	Last Updated: 2015-11-26
+*******************************/
+/*******************************
+	Desktop
+*******************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	min-width: 320px;
+	min-height: 100%;
+	background: #fff;
+	font-family: 'Helvetica Neue', 'Pingfang SC', 'Lantinghei SC', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 140%;
+	color: #333;
+}
+
+ol,ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+    display: block;
+    float: left;
+    width: 100%;
+    height: auto;
+    border: none;
+	background: #f7f8f0;
+	object-fit: contain;
+}
+
+#wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.parallax-window {
+	width: 100%;
+}
+
+
+/*	COVER	*/
+
+#cover {
+	width: 100%;
+	height: 90vh;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-image: url('./cover.jpg');
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 80% 100%;
+	color: #fff;
+	position: relative;
+}
+
+#cover .caption {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	color: rgba(255,255,255,0.8);
+	font-size: 12px;
+	line-height: 100%;
+	font-weight: 400;
+}
+
+#cover #title {
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	width: 520px;
+	margin-left: -260px;
+	padding: 20px 40px;
+	background: rgba(255,255,255,0.1);
+	text-align: center;
+	text-shadow: 0 0 4px rgba(56,169,199,1);
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+#title h1 {
+	width: 100%;
+	font-size: 32px;
+	line-height: 140%;
+}
+#title h1 span {
+	display: block;
+	font-size: 40px;
+}
+#title h1 img {
+	width: 80%;
+}
+#title .meta:before {
+	content: '';
+	display: block;
+	width: 64px;
+	border-top: 1px solid rgba(255,255,255,0.5);
+	margin: 10px auto 5px;
+}
+#title .meta {
+	opacity: 0.7;
+	font-weight: 300;
+}
+#title .meta .byline {
+	margin-right: 10px;
+	font-size: 14px;
+	font-weight: 500;
+}
+#title .meta .pub-date {
+	font-size: 12px;
+	font-weight: 500;
+}
+
+#title .kicker {
+	width: auto;
+	font-size: 14px;
+	font-weight: 500;
+	opacity: 0.8;
+}
+#title .kicker:after {
+	content: '';
+	display: block;
+
+}
+
+#title .summary {
+	font-size: 14px;
+	line-height: 140%;
+	margin-top: 5px;
+	display: none;
+}
+#title .summary p {
+	text-align: justify;
+}
+
+.share {
+	clear: both;
+	text-align: center;
+	width: 100%;
+	height: 24px;
+	margin-top: 15px;
+	display: block;
+}
+.share a {
+	display: inline-block;
+	height: 24px;
+	margin: 0 5px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	opacity: 0.6;
+	transition: all .2s ease-in-out;
+}
+.share a:hover {
+	opacity: 1;
+}
+.share a.twitter {
+	width: 28px;
+	background-size: 28px 24px;
+	background-image: url('./share_twitter.svg');
+}
+.share a.facebook {
+	width: 22px;
+	background-size: 22px 22px;
+	background-image: url('./share_facebook.svg');
+}
+
+
+/*	ARTICLE	*/
+
+.article {
+	clear: both;
+	width: 100%;
+	max-width: 720px;
+	overflow: hidden;
+	margin: 0 auto 0px;
+	color: #333;
+}
+
+.article p {
+	line-height: 150%;
+	text-align: justify;
+	margin-bottom: 20px;
+}
+.article p.notes {
+	font-size: 14px;
+	line-height: 140%;
+	margin-bottom: 10px;
+	color: #666;
+}
+
+.article:before,
+.article:after {
+	content: '';
+	display: block;
+	width: 96px;
+	margin: 40px auto;
+	border-top: 2px solid #eee;
+}
+
+
+/*	ALBUM	*/
+
+ul.album {
+	clear: both;
+	width: 100%;
+	max-width: 960px;
+	height: auto;
+	margin: 0 auto;
+}
+	
+ul.album li {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+ul.album li:last-child {
+	margin-bottom: 0;
+}
+
+
+
+
+
+#nasa {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+
+#nasa-content {
+	background: #000;
+	border-radius: 8px;
+}
+
+.nasa-credit {
+	text-align: right;
+	font-size: 12px;
+	color: #999;
+}
+ul.years {
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	height: 36px;
+	background: #000;
+	line-height: 36px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+li.nasa-year {
+	float: left;
+	width: 100%;
+	height: 36px;
+	line-height: 38px;
+	opacity: 0;
+	font-family: Menlo, Courier, mono, fixed;
+	font-size: 20px;
+	font-weight: 700;
+	color: #fff;
+	z-index: 99;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-play-state: running;
+	-webkit-animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-play-state: running;
+	animation-duration: 20s;
+}
+
+#nasa .slides {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	width: 100%;
+	max-width: 720px;
+	margin: 0 auto;
+	background-color: #000;
+}
+
+#nasa img.nasa-image {
+	border-left: 20px solid #000;
+	border-right: 20px solid #000;
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 20s;
+	background: #000;
+}
+#nasa img.nasa-1945,
+#nasa li.year-1945 {
+	-webkit-animation-name: xfade-1945;
+	animation-name: xfade-1945;
+}
+#nasa img.nasa-1955,
+#nasa li.year-1955 {
+	-webkit-animation-name: xfade-1955;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-1955;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-1965,
+#nasa li.year-1965 {
+	-webkit-animation-name: xfade-1965;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-1965;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-1975,
+#nasa li.year-1975 {
+	-webkit-animation-name: xfade-1975;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-1975;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-1985,
+#nasa li.year-1985 {
+	-webkit-animation-name: xfade-1985;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-1985;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-1995,
+#nasa li.year-1995 {
+	-webkit-animation-name: xfade-1995;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-1995;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-2005,
+#nasa li.year-2005 {
+	-webkit-animation-name: xfade-2005;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-2005;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+#nasa img.nasa-2014,
+#nasa li.year-2014 {
+	-webkit-animation-name: xfade-2014;
+	-webkit-transform: translate(0,-100%);
+	animation-name: xfade-2014;
+	transform: translate(0,-100%);
+	margin-bottom: -100%;
+}
+
+#nasa img.nasa-legend {
+	clear: both;
+	width: 100%;
+	overflow: hidden;
+	background: #000;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+
+@-webkit-keyframes xfade-1945 {
+	0%     {opacity:1;}
+	10%    {opacity:1;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:1;}
+}
+@-webkit-keyframes xfade-1955 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:1;}
+	22.5%  {opacity:1;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-1965 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:1;}
+	35%    {opacity:1;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-1975 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:1;}
+	47.5%  {opacity:1;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-1985 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:1;}
+	60%    {opacity:1;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-1995 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:1;}
+	72.5%  {opacity:1;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-2005 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:1;}
+	85%    {opacity:1;}
+	87.5%  {opacity:0;}
+	97.5%  {opacity:0;}
+	100%   {opacity:0;}
+}
+@-webkit-keyframes xfade-2014 {
+	0%     {opacity:0;}
+	10%    {opacity:0;}
+	12.5%  {opacity:0;}
+	22.5%  {opacity:0;}
+	25%    {opacity:0;}
+	35%    {opacity:0;}
+	37.5%  {opacity:0;}
+	47.5%  {opacity:0;}
+	50%    {opacity:0;}
+	60%    {opacity:0;}
+	62.5%  {opacity:0;}
+	72.5%  {opacity:0;}
+	75%    {opacity:0;}
+	85%    {opacity:0;}
+	87.5%  {opacity:1;}
+	97.5%  {opacity:1;}
+	100%   {opacity:0;}
+}
+
+
+
+
+#before-after {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+.before-after-container {
+	clear: both;
+	display: block;
+	width: 100%;
+}
+.before-after-content {
+	border-radius: 10px;
+	max-height: 720px;
+	display: block;
+}
+
+#taiwan {
+	max-height: 720px;
+	max-width: 540px;
+	margin: 0 auto;
+}
+
+#before-after .caption {
+	max-width: 700px;
+	margin: 10px auto 30px;
+	font-size: 14px;
+	line-height: 140%;
+	text-align: center;
+	color: #666;
+}
+#before-after .credit {
+	color: #999;
+	margin-left: 5px;
+}
+
+
+figure {}
+figure img {
+	width: 100%;
+	height: auto;
+	border: none;
+	object-fit: contain;
+	border-radius: 10px;
+}
+
+figcaption {
+	width: 100%;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+	padding: 0 16px;
+}
+
+.ratio-box {
+	position: relative;
+	height: 0;
+	overflow: hidden;
+	border-radius: 10px;
+	padding-bottom: 66.66%;
+	background-color: #f8f8f8;
+}
+
+.ratio-box:before {
+	content: '';
+	position: absolute;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	background-image: url('./loading.svg');
+	background-size: 64px 64px;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	opacity: 0.5;
+	-webkit-animation: spin 2s infinite;
+	animation: spin 2s infinite;
+	zoom: 0.8;
+}
+@-webkit-keyframes spin {
+    0%   {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+@keyframes spin {
+    0% {transform:rotate(0deg);}
+    100% {transform:rotate(360deg);}
+}
+
+.ratio-box img {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.lazy {
+	opacity: 0;
+	transition: opacity .5s ease;
+	-webkit-transition: opacity .5s ease-in-out;
+}
+
+
+
+/*	CREDITS	*/
+
+ul#credits {
+	clear: both;
+	list-style: none;
+	width: 100%;
+	background: #eee;
+	margin-top: 20px;
+	padding: 20px;
+	font-size: 14px;
+	color: #666;
+}
+ul#credits li {
+	overflow: hidden;
+	text-align: center;
+
+}
+ul#credits li strong {
+	font-weight: 500;
+	color: #999;
+}
+
+
+/*	FOOTER	*/
+
+footer {
+	clear: both;
+	width: 100%;
+	padding: 40px 0;
+	font-family: Palatino, Times, serif;
+	font-size: 12px;
+	font-weight: 300;
+	text-align: center;
+	color: #666;
+}
+
+
+
+/*	HACKS & PATCHES	*/
+
+.mobile-cover-patch {
+	display: none;
+}
+
+g text {
+	font-family: sans-serif !important;
+}
+
+
+/*******************************
+	iPad LANDSCAPE
+*******************************/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+body {
+}
+
+#cover #title {
+	left: auto;
+	right: 0;
+	bottom: 25%;
+    background: rgba(0,0,0,0.7);
+}
+ul.album {
+	width: 90%;
+}
+
+}
+
+
+
+/*******************************
+	iPad PORTRAIT
+*******************************/
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait)
+and (-webkit-min-device-pixel-ratio: 2) {
+body {}
+
+#cover #title {
+	left: auto;
+	right: 0;
+	bottom: 30%;
+    background: rgba(0,0,0,0.7);
+}
+
+.article {
+	max-width: 640px;
+}
+
+ul.album {
+	width: 100%;
+}
+
+}
+
+
+
+/*******************************
+	iPhone
+*******************************/
+@media only screen
+and (min-width: 320px)
+and (max-width: 480px) {
+body {
+}
+
+
+#cover .caption {
+	bottom: 5px;
+	right: 0;
+	padding: 0 5px;
+	text-shadow: none;
+	text-align: right;
+	color: rgba(255,255,255,0.7);
+}
+#cover .caption span {
+	display:none;
+}
+.pub-date {
+	display: block;
+}
+
+.article {
+	padding: 0 16px;
+	margin-bottom: 10px;
+}
+
+#cover #title {
+	left: auto;
+	right: 0;
+	bottom: auto;
+	top: 20%;
+	max-width: 80%;
+	width: auto;
+	padding: 25px 30px 15px 25px;
+	text-align: left;
+	text-shadow: 0 0 4px rgba(56,169,199,0.8);
+	background-color: rgba(35,155,185,0.4);
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 10px;
+}
+
+#title h1 {
+	font-size: 20px;
+}
+#title h1 span {
+	font-size: 25px;
+}
+#title h1 img {
+	width: 100%;
+}
+#title .meta {
+	opacity: 0.8;
+}
+#title .meta:before {
+	margin: 12px 0 10px;
+}
+
+.summary {
+	display: none;
+}
+
+.share {
+	display: none;
+}
+
+.article:before,
+.article:after {
+	margin: 30px auto;
+}
+
+ul.album {
+	width: 100%;
+	max-width: 100%;
+}
+
+ul.album li {
+	margin-bottom: 20px;
+}
+.ratio-box:before {
+	zoom: 0.6;
+}
+
+.before-after-content {
+	border-radius: 0;
+}
+#before-after .caption {
+	font-size: 12px;
+	text-align: left;
+	padding: 0 16px;
+}
+ul.album li:after {
+    margin: 16px auto 32px;
+}
+
+}
